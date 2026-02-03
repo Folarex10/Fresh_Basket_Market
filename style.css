@@ -283,6 +283,7 @@ body {
     padding: 4rem 2rem;
     border-radius: 7px;
     text-align: center;
+    margin-left: 14.5rem;
 }
 
 
@@ -293,6 +294,7 @@ body {
 
 .create-free-account-title p {
     color: white;
+
 }
 
 .first-btn {
@@ -305,14 +307,12 @@ body {
 }
 
 .footer-1 {
-    font-size: 8px;
-    padding: 30px;
+    font-size: 1.2rem;
+    padding: 2rem 2rem;
 }
 
 .footer-2 {
-    font-size: 8px; 
-    margin-top: -40px;
+    font-size: 1.2rem; 
+    margin-top: -4rem;
     text-align: right;
-
-    
 }
