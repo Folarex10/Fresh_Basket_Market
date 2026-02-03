@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* font-size: 100%; 
+    1rem = 16px
+    10 / 16 = 0.625
+    0.625 x 100 = 62.5% */
+    font-size: 62.5%; /*1rem = 10px */
+
+}
+/* 632px, 740px, 1024px, 1280px */
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+.primary-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #059669;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+}
+
+.logo-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    align-items: center;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 700px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #6b7280;
+}
+
+.logo-icon {
+    color: #059669;
+    font-size: 3rem;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-basis: 50%;
+}
+
+.hero-text-tag {
+    background: #e5e7eb;
+    color: #4b5563;
+    width: fit-content;
+    padding: 2px 1rem;
+    border-radius: 2rem;
+}
+
+@media (max-width:400px) {
+    .hero-text-tag {
+        font-size: 1rem;
+    }
+}
+
+.hero-heading {
+    font-size: 5rem;
+}
+
+@media (max-width: 900px) {
+    .hero-heading {
+        font-size: 3rem;
+    }
+}
+
+.hero-paragraph {
+    color: #4b5563;
+}
+
+.hero-lists {
+    list-style: none;
+    color: #4b5563;
+}
+
+.hero-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-list i {
+    color: #059669;
+}
+
+.outlined-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    border: 1px solid #e5e7eb;
+}
+
+.hero-btn-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    width: 50rem;
+    height: 40rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .hero-image {
+        width:40rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .hero-image-wrapper {
+        display: none;
+    }
+    .hero-content {
+        flex-basis: 100%;
+    }
+}
+
+.how-it-works {
+    background-color: #e0f2f1;
+    padding: 5rem 2rem;
+}
+
+.how-it-works-title {
+    text-align: center;
+}
+
+.how-it-works-title h3 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.how-it-works-title p {
+    color: #4b5563;
+}
+
+.how-it-works-card-container {
+    display:flex;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 640px) {
+    .how-it-works-card-container {
+        flex-direction: column;
+    }
+}
+
+.how-it-works-card {
+    background-color: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 1rem;
+}
+
+.how-it-works-card h4 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.card-icon {
+    display: flex;
+    background-color: #e0f2f1;
+    width: 3.2rem;
+    height: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #059669;
+}
+
+.everything-you-need {
+    padding: 5rem 2rem;
+}
+
+.everything-you-need-title {
+    text-align: center;
+}
+
+.everything-you-need-title h3 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.everything-you-need-title p {
+    color: #4b5563;
+}
+
+.everything-you-need-card-container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 640px) {
+    .everything-you-need-card-container {
+        flex-direction: column;
+    }
+}
+
+.everything-you-need-card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.everything-you-need-card h4 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.everything-you-need-card p {
+    color: #4b5563;
+}
+
+.everything-you-need-card ul {
+    color: #4b5563;
+    list-style: none;
+}
+
+.create-free-account {
+    background-color: #e0f2f1;
+    padding: 5rem 2rem;
+}
+
+.create-free-account-title {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #059669;
+    padding: 4rem 2rem;
+    border-radius: 7px;
+    text-align: center;
+}
+
+
+.create-free-account-title h3 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.create-free-account-title p {
+    color: white;
+}
+
+.first-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+}
+
+.footer-1 {
+    font-size: 8px;
+    padding: 30px;
+}
+
+.footer-2 {
+    font-size: 8px; 
+    margin-top: -40px;
+    text-align: right;
+
+    
+}
